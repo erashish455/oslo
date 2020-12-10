@@ -155,3 +155,23 @@ setInterval(function() {
     #radio4:checked~.navigation-auto .auto-btn4 {
         background: #40D3DC;
     }
+
+
+
+
+
+
+
+
+
+
+
+    <div class="slides">
+
+                <div id="1" class="slide"><img src="https://source.unsplash.com/900x400/?food" alt=""></div>
+                <div id="2" class="slide"><img src="https://source.unsplash.com/900x400/?cake" alt=""></div>
+                <div id="3" class="slide"><img src="https://source.unsplash.com/900x400/?cake1" alt=""></div>
+                <div id="4" class="slide"><img src="https://source.unsplash.com/900x400/?noodles" alt=""></div>
+                <div id="5" class="slide"><img src="https://source.unsplash.com/900x400/?pizza" alt=""></div>
+                <div id="6" class="slide"><img src="https://source.unsplash.com/900x400/?food" alt=""></div>
+            </div>
