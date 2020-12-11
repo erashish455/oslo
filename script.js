@@ -1,5 +1,4 @@
 var x = 0;
-var innerhtmlRbtn = $('.radio').html()
 
 
 $(document).ready(function() {
@@ -20,8 +19,9 @@ suspend = false;
 
 let a = setInterval(function() {
 
-    pagination()
+
     if (!suspend) {
+        pagination()
 
         $('figure').css('left', -x + '%')
 
