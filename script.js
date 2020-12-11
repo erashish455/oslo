@@ -1,4 +1,5 @@
 var x = 0;
+var innerhtmlRbtn = $('.radio').html()
 
 
 $(document).ready(function() {
@@ -18,13 +19,15 @@ $(document).ready(function() {
 suspend = false;
 
 let a = setInterval(function() {
+
+    pagination()
     if (!suspend) {
 
         $('figure').css('left', -x + '%')
-        pagination()
+
         console.log(x)
         x += 100
-        if (x == 600) {
+        if (x == 700) {
             x = 0
         }
 
@@ -43,38 +46,42 @@ $('figure, .rbtn, .btn-prev,.btn-next ').mouseleave(function() {
 
 
 function pagination() {
-    $('.rbtn').siblings().removeAttr('checked')
+
     if (x == 0) {
-
-
-        $('#1').attr('checked', true)
-
+        $('#1').css('color', 'red')
+        $('#1').siblings().css('color', 'black')
 
     } else if (x == 100) {
-        $('#2').attr('checked', true)
+        $('#2').css('color', 'red')
+        $('#2').siblings().css('color', 'black')
 
 
     } else if (x == 200) {
-        $('#3').attr('checked', true)
+        $('#3').css('color', 'red')
+        $('#3').siblings().css('color', 'black')
 
 
 
     } else if (x == 300) {
-        $('#4').attr('checked', true)
+        $('#4').css('color', 'red')
+        $('#4').siblings().css('color', 'black')
 
 
 
     } else if (x == 400) {
-        $('#5').attr('checked', true)
+        $('#5').css('color', 'red')
+        $('#5').siblings().css('color', 'black')
 
 
 
     } else if (x == 500) {
-        $('#6').attr('checked', true)
+        $('#6').css('color', 'red')
+        $('#6').siblings().css('color', 'black')
 
 
     } else if (x == 600) {
-        $('#7').attr('checked', true)
+        $('#7').css('color', 'red')
+        $('#7').siblings().css('color', 'black')
 
 
     }
@@ -86,21 +93,51 @@ function pagination() {
 
 $('.rbtn').click(function() {
     let q = this.id;
+
+
     console.log(q)
     if (q == 1) {
         $('figure').css('left', '0%')
+        $('#1').css('color', 'red')
+        $('#1').siblings().css('color', 'black')
+        x = 0
+
 
     } else if (q == 2) {
         $("figure").css('left', '-100%')
+        $('#2').css('color', 'red')
+        $('#2').siblings().css('color', 'black')
+        x = 100
+
     } else if (q == 3) {
         $("figure").css('left', '-200%')
+        $('#3').css('color', 'red')
+        $('#3').siblings().css('color', 'black')
+        x = 200
+
     } else if (q == 4) {
         $("figure").css('left', '-300%')
+        $('#4').css('color', 'red')
+        $('#4').siblings().css('color', 'black')
+        x = 300
+
     } else if (q == 5) {
         $("figure").css('left', '-400%')
+        $('#5').css('color', 'red')
+        $('#5').siblings().css('color', 'black')
+        x = 400
+
     } else if (q == 6) {
         $("figure").css('left', '-500%')
+        $('#6').css('color', 'red')
+        $('#6').siblings().css('color', 'black')
+        x = 5
+
     } else if (q == 7) {
         $("figure").css('left', '-600%')
+        $('#7').css('color', 'red')
+        $('#7').siblings().css('color', 'black')
+        x = 600
+
     }
 })
