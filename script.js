@@ -83,3 +83,24 @@ function pagination() {
 
 
 }
+
+$('.rbtn').click(function() {
+    let q = this.id;
+    console.log(q)
+    if (q == 1) {
+        $('figure').css('left', '0%')
+
+    } else if (q == 2) {
+        $("figure").css('left', '-100%')
+    } else if (q == 3) {
+        $("figure").css('left', '-200%')
+    } else if (q == 4) {
+        $("figure").css('left', '-300%')
+    } else if (q == 5) {
+        $("figure").css('left', '-400%')
+    } else if (q == 6) {
+        $("figure").css('left', '-500%')
+    } else if (q == 7) {
+        $("figure").css('left', '-600%')
+    }
+})
