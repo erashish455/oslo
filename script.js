@@ -141,3 +141,29 @@ $('.rbtn').click(function() {
 
     }
 })
+$('.rbtn').hover(function() {
+    let temp = this.id
+
+    // over
+    $('#' + temp).css({
+        'font-size': '2rem',
+
+
+    })
+    $('#' + temp).siblings().css({
+        'font-size': '.5rem',
+
+
+    })
+
+
+}, function() {
+    let temp = this.id
+        // out
+    $('#' + temp).css('font-size', '1rem')
+    $('#' + temp).siblings().css({
+        'font-size': '1rem',
+
+
+    })
+});
