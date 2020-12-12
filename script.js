@@ -141,6 +141,8 @@ $('.rbtn').click(function() {
 
     }
 })
+
+// this increase the sige of thepagination when the mouse cusrsore is on it
 $('.rbtn').hover(function() {
     let temp = this.id
 
