@@ -183,13 +183,13 @@ $('.rbtn').hover(function() {
             })
         } else {
             $('#' + temp).css({
-                'font-size': '2rem',
+                'font-size': '2.5rem',
 
 
 
             })
             $('#' + (temp)).prev().css({
-                'font-size': '1.5rem',
+                'font-size': '2rem',
 
 
 
