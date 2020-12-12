@@ -144,28 +144,71 @@ $('.rbtn').click(function() {
 
 // this increase the sige of thepagination when the mouse cusrsore is on it
 $('.rbtn').hover(function() {
-    let temp = this.id
+        let temp = this.id
 
-    // over
-    $('#' + temp).css({
-        'font-size': '2rem',
-
-
-    })
-    $('#' + temp).siblings().css({
-        'font-size': '.5rem',
+        // over
+        if (temp == 1) {
+            $('#' + temp).css({
+                'font-size': '2.5rem',
 
 
-    })
+
+            })
+            $('#' + (temp)).next().css({
+                'font-size': '2rem',
 
 
-}, function() {
-    let temp = this.id
-        // out
-    $('#' + temp).css('font-size', '1rem')
-    $('#' + temp).siblings().css({
-        'font-size': '1rem',
+
+            })
+
+        } else if (temp > 1 && temp < 7) {
+            console.log("hghjg")
+            $('#' + temp).css({
+                'font-size': '2.5rem',
 
 
-    })
-});
+
+            })
+            $('#' + (temp)).prev().css({
+                'font-size': '2rem',
+
+
+
+            })
+            $('#' + (temp)).next().css({
+                'font-size': '2rem',
+
+
+
+            })
+        } else {
+            $('#' + temp).css({
+                'font-size': '2rem',
+
+
+
+            })
+            $('#' + (temp)).prev().css({
+                'font-size': '1.5rem',
+
+
+
+            })
+
+        }
+
+
+
+
+    },
+    function() {
+        let temp = this.id
+            // out
+
+        $('#' + temp).css('font-size', '1rem')
+        $('#' + temp).siblings().css({
+            'font-size': '1rem',
+
+
+        })
+    });
